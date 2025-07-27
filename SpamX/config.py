@@ -3,8 +3,8 @@ from os import getenv as env
 from SpamX.functions.logger import LOGS
 from dotenv import load_dotenv
 
-if os.path.exists(".env"):
-    load_dotenv(".env")
+if os.path.exists("semple.env"):
+    load_dotenv("semple.env")
 
 API_ID = int(env("API_ID", None))
 if API_ID is None:
